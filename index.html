@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("home.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("foshay.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("historybillboard1.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <!--<span class="border">SCROLL DOWN</span>-->
+  </div>
+</div>
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">Capstone Page</h3>
+  <p>We have a beautiful city. There are many notable historic landmarks throughout, from the mighty Mississippi to the hills of Prospect Park. From it’s early milling and railroad days, to its relatively bland, but stable food sources.
+
+As we become seperated from past historical events, I imagine a layer of technology acting as a connective tissue to bring them forward into a new age. Using our ability to tell great stories, we will combine a new era of tall tales with our ubiquitous digital devices, innovating as we have always done in the Land of Lakes, connecting people back to the history they never were aware of. </p>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">AUGMENTED HISTORY</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>An augmented-reality web experience that would overlay tall tales in various locations throughout the city. Users could hear a story being told and add one of their own once they unlocked all the different locations.</p>
+  </div>
+</div>
+
+<div class="bgimg-3">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">GETTING THe WORD OUT</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  <p>The Mostly Untrue but Plausible History of Minneapolis</p>
+  </div>
+</div>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <span class="border">THANK YOU!</span>
+  </div>
+</div>
+
+</body>
+</html>
