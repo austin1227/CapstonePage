@@ -2,17 +2,22 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Austin Gullixson Capstone</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
+.mySlides {display:none;}
+
 body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
-  color: #777;
+  color: #666;
 }
 
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
-  opacity: 0.65;
+  opacity: 0.85;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -26,7 +31,7 @@ body, html {
 
 .bgimg-2 {
   background-image: url("foshay.jpg");
-  min-height: 400px;
+  min-height: 200px;
 }
 
 .bgimg-3 {
@@ -64,6 +69,26 @@ h3 {
     background-attachment: scroll;
   }
 }
+
+.container {
+	padding: 20px 40px 40px;
+	max-width: 640px;
+	&__image {
+		display: inline-block;
+		vertical-align: top;
+		width: 46%;
+		margin: 20px 30px 0 0;
+	}
+	&__text {
+		display: inline-block;
+		width: 46%;
+		@media (max-width: 620px) {
+			width: 100%;
+		}
+	}
+}
+
+
 </style>
 </head>
 <body>
@@ -74,8 +99,14 @@ h3 {
   </div>
 </div>
 
+
+<div style="color: white; background-color:gray;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">The Mostly Untrue but Plausible History of Minneapolis</h3>
+  </div>
+
+
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">Capstone Page</h3>
+  <h3 style="text-align:center;">AUGMENTED HISTORY</h3>
   <p>We have a beautiful city. There are many notable historic landmarks throughout, from the mighty Mississippi to the hills of Prospect Park. From it’s early milling and railroad days, to its relatively bland, but stable food sources.
 
 As we become seperated from past historical events, I imagine a layer of technology acting as a connective tissue to bring them forward into a new age. Using our ability to tell great stories, we will combine a new era of tall tales with our ubiquitous digital devices, innovating as we have always done in the Land of Lakes, connecting people back to the history they never were aware of. </p>
@@ -83,27 +114,105 @@ As we become seperated from past historical events, I imagine a layer of technol
 
 <div class="bgimg-2">
   <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">AUGMENTED HISTORY</span>
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">RESEARCH</span>
   </div>
 </div>
 
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>An augmented-reality web experience that would overlay tall tales in various locations throughout the city. Users could hear a story being told and add one of their own once they unlocked all the different locations.</p>
-  </div>
+
+
+
+<div class="container">
+	<img class="container__image" src="whaleprototype.jpg">
+	<div class="container__text">
+		<h2>Getting into AR.js and A-Frame</h2>
+		<p>Using some of the groundwork set up from previous courses, I set out to make a working prototype of the basic augmented reality object, the photo of the whale, and worked through hours of tutuorials and feeds to get it to successfully load in the camera view. </p>
+	</div>
 </div>
 
-<div class="bgimg-3">
+<div class="bgimg-2">
   <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">GETTING THe WORD OUT</span>
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">PROCESS</span>
   </div>
 </div>
 
-<div style="position:relative;">
-  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
-  <p>The Mostly Untrue but Plausible History of Minneapolis</p>
+<div class="container">
+	<img class="container__image" src="whalehome.jpg">
+	<div class="container__text">
+		<h2>The Stories</h2>
+		<p>Once I had the basic functionality down and assets created, I began to write, edit, and rewrite the stories. Then I made a scratch version of the audio to fill as placeholder for the site so once the user was at the historic site, the story could be listened to within the AR experience.  </p>
+	</div>
+</div>
+
+
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">DELIVERABLES</span>
   </div>
 </div>
+
+<h2 class="w3-center"></h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="homepage.jpg" style="width:100%">
+  <img class="mySlides" src="whalehome.jpg" style="width:100%">
+  <img class="mySlides" src="historybillboard1.jpg" style="width:100%">
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+<div class="container">
+		<p>A website containing the AR experience, as well as landing page and map. Audio files of the stories and advertising to promote the site.</p>
+	</div>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SUMMARY</span>
+  </div>
+</div>
+
+<div class="container">
+		<p>A website containing the AR experience, as well as landing page and map. Audio files of the stories and advertising to promote the site.</p>
+	</div>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">ENDNOTES</span>
+  </div>
+</div>
+
+<div class="container">
+		<p>Links</p>
+    <p>sources</p>
+    <p>Capstone Site</p>
+    <p>Process Blog</p>
+	</div>
+</div>
+
 
 <div class="bgimg-1">
   <div class="caption">
