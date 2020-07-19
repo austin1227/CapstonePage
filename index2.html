@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Austin Gullixson Capstone</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #666;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.85;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("home.jpg");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("foshay.jpg");
+  min-height: 200px;
+}
+
+.bgimg-3 {
+  background-image: url("historybillboard1.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 30px "Lato", sans-serif;
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+  }
+}
+
+.container {
+	padding: 20px 40px 40px;
+	
+	&__image {
+		display: inline-block;
+		vertical-align: top;
+		width: 46%;
+		margin: 20px 30px 0 0;
+	}
+	&__text {
+		display: inline-block;
+		width: 46%;
+		@media (max-width: 620px) {
+			width: 100%;
+		}
+	}
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="bgimg-1">
+  <div class="caption">
+  <!--<span class="border">SCROLL DOWN</span>-->
+  </div>
+</div>
+
+
+<div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+  <h3 style="text-align:center;">AUGMENTED HISTORY</h3>
+  <p>We have a beautiful city. There are many notable historic landmarks throughout, from the mighty Mississippi to the hills of Prospect Park. From the early milling and railroad days, to its relatively bland, but stable food sources. We also have a lot of stories, some that may stretch the truth at times. I'm looking at you, Paul Bunyan.
+
+As we become separated from past historical events, I imagine a layer of technology acting as a connective tissue to bring them forward into a new age. Using our ability to tell great stories, we will combine a new era of tall tales with our ubiquitous digital devices, innovating as we have always done in the Land of Lakes, connecting people back to the history they never were aware of. And right now we need a laugh. And a way to get out into our community and connect in a contactless way. The timing is right for Augmented History.</p>
+</div>
+
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">THE BEGINNINGS</span>
+  </div>
+</div>
+
+<div class="container">
+	<img class="container__image" src="icons.jpg">
+	<div class="container__text">
+		<h2>The Birth of History</h2>
+		<p>It all started in a previous class, Design Studio, where the idea was concepted, graphics were made, and the beginings of the story were first written down. As I went through the program, I dug more into AR capabilities and got more comfortable with javascript, and saw how I might be able to apply those learnings to this kooky idea about overlaying history with our fair city. </p>
+	</div>
+</div>
+
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">RESEARCH</span>
+  </div>
+</div>
+
+<div class="container">
+	<img class="container__image" src="code.jpg">
+	<div class="container__text">
+		<h2>Getting into AR.js and A-Frame</h2>
+		<p>Using some of the groundwork set up from previous courses, I attempted to teach myself the javascript languages AR.js and A-Frame. AR.js is relatively new, but fortunately there was some good tutorials to at least get my head aroun it. A-Frame has been around for a while, but is mainly used for VR applications, but it combines with AR.js and you have to know a little about both to make things show up in your mobile camera. </p>
+	</div>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">PROCESS</span>
+  </div>
+</div>
+
+<div class="container">
+	<img class="container__image" src="whaleprototype.jpg">
+	<div class="container__text">
+		<h2>Bending the code to my will</h2>
+		<p>Using some of the groundwork set up from previous courses, I set out to make a working prototype of the basic augmented reality object, the photo of the whale, and worked through hours of tutuorials and feeds to get it to successfully load in the camera view. </p>
+	</div>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">THE TALLEST OF TALES</span>
+  </div>
+</div>
+
+<div class="container">
+	<img class="container__image" src="stories.jpg">
+	<div class="container__text">
+		<h2>The Stories</h2>
+		<p>Once I had the basic functionality down and assets created, I began to write, edit, and rewrite the stories. Then I recorded audio for each experience and mixed in music and sound as appropriate, so once the user was at the historic site, the story could be listened to within the AR experience. Granted, they do have to suffer through my silly narration but hopefully the sound of their laughter fills in over the plot holes. </p>
+	</div>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">TESTING</span>
+  </div>
+</div>
+
+
+<div class="container">
+	<img class="container__image" src="test.jpg">
+	<div class="container__text">
+		<h2>User Testing</h2>
+		<p>Lorem ipsum dolar...  </p>
+	</div>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">DELIVERABLES</span>
+  </div>
+</div>
+
+<h2 class="w3-center"></h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="homepage.jpg" style="width:100%">
+  <img class="mySlides" src="whalehome.jpg" style="width:100%">
+  <img class="mySlides" src="historybillboard1.jpg" style="width:100%">
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex-1].style.display = "block";
+}
+</script>
+
+<div class="container">
+		<p>A website containing the AR experience, as well as landing page and map. Audio files of the stories and advertising to promote the site.</p>
+	</div>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">SUMMARY</span>
+  </div>
+</div>
+
+
+<div class="container">
+  <img class="container__image" src="mockup.gif">
+	<div class="container__text">
+		<h2>All together now</h2>
+		<p>Using everything I've learned in the program, combined with professional experience, and lots of digging around to find information and help wherever I could, I was able to bring the idea to life. This will provide a good foundation for potentially selling the idea as a more commerciall-viable product to local tourist groups or city official looking for ways to engage the community and get people out into our public spaces, all without needing anything physical to engage with.  </p>
+	</div>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">ENDNOTES</span>
+  </div>
+</div>
+
+<div class="container">
+		<h2>Links</h2>
+    <p>Sources</p>
+    <p><a href="https://ar-js-org.github.io/AR.js-Docs/" target="_blank">AR.js documentation</a></p>
+    <p><a href="https://aframe.io/docs/1.0.0/introduction/" target="_blank">A-Frame documentation</a></p>
+
+    <p>The Augmented Reality History Site</p>
+    <p><a href="https://agullixson963.studio.mcad.edu/capstone/Component/index.html" target="_blank">The site created for this project</a></p>
+
+    <p>Process Blog</p>
+    <p><a href="https://spark.adobe.com/page/BRXpWpIWDq9fm/" target="_blank">Sketchbook of the Trials and Tribulations of my Capstone</a></p>
+	</div>
+</div>
+
+
+<div class="bgimg-1">
+
+  <span class="border"></span>
+  </div>
+</div>
+
+</body>
+</html>
