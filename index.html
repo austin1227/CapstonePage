@@ -15,6 +15,12 @@ body, html {
   color: #666;
 }
 
+img {
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+}
+
 .bgimg-1, .bgimg-2, .bgimg-3 {
   position: relative;
   opacity: 0.85;
@@ -59,7 +65,7 @@ body, html {
 h3 {
   letter-spacing: 5px;
   text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
+  font: 30px "Lato", sans-serif;
   color: #111;
 }
 
@@ -72,7 +78,7 @@ h3 {
 
 .container {
 	padding: 20px 40px 40px;
-	max-width: 640px;
+
 	&__image {
 		display: inline-block;
 		vertical-align: top;
@@ -100,63 +106,135 @@ h3 {
 </div>
 
 
-<div style="color: white; background-color:gray;text-align:center;padding:50px 80px;text-align: justify;">
-  <h3 style="text-align:center;">The Mostly Untrue but Plausible History of Minneapolis</h3>
-  </div>
-
-
 <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
   <h3 style="text-align:center;">AUGMENTED HISTORY</h3>
-  <p>We have a beautiful city. There are many notable historic landmarks throughout, from the mighty Mississippi to the hills of Prospect Park. From it’s early milling and railroad days, to its relatively bland, but stable food sources.
+  <p>We have a beautiful city. There are many notable historic landmarks throughout, from the mighty Mississippi to the hills of Prospect Park. From the early milling and railroad days, to its relatively bland, but stable food sources. We also have a lot of stories, some that may stretch the truth at times. I'm looking at you, Paul Bunyan.
 
-As we become seperated from past historical events, I imagine a layer of technology acting as a connective tissue to bring them forward into a new age. Using our ability to tell great stories, we will combine a new era of tall tales with our ubiquitous digital devices, innovating as we have always done in the Land of Lakes, connecting people back to the history they never were aware of. </p>
+As we become separated from past historical events, I imagine a layer of technology acting as a connective tissue to bring them forward into a new age. Using our ability to tell great stories, we will combine a new era of tall tales with our ubiquitous digital devices, innovating as we have always done in the Land of Lakes, connecting people back to the history they never were aware of. And right now we could all use a laugh and a way to get out into our community and connect in a contactless way. The timing is right for Augmented History.</p>
+</div>
+
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">THE BEGINNINGS</span>
+  </div>
+</div>
+
+<div class="container">
+	<img class="container__image" src="icons.jpg">
+	<div class="container__text">
+		<h2>The Birth of History</h2>
+		<p>It all started in a previous class, Design Studio, where the idea was concepted, graphics were made, and the beginings of the story were first written down. As I went through the program, I dug more into AR capabilities and got more comfortable with Javascript, and saw how I might be able to apply those learnings to this kooky idea about overlaying history within our fair city. </p>
+	</div>
+</div>
+
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">RESEARCH</span>
+  </div>
+</div>
+
+<div class="container">
+	<img class="container__image" src="code.jpg">
+	<div class="container__text">
+		<h2>Getting into AR.js and A-Frame</h2>
+		<p>Using some of the groundwork set up from previous courses, I attempted to teach myself the Javascript languages AR.js and A-Frame. AR.js is relatively new, but fortunately there was some good tutorials to at least get my head around it. A-Frame has been around for a while, but is mainly used for VR applications, but it combines with AR.js and you have to know a little about both to make things show up in your mobile camera. </p>
+	</div>
+</div>
+
+<div class="container">
+	<img class="container__image" src="aframecodepen.png">
+	<div class="container__text">
+		<h2>A-Frame as a gateway to the prototype</h2>
+		<p>As it was fairly easy to follow the AR.js tutorials, getting them to do what I wanted and customize them to my needs was less so. Enter some digging into A-Frame. It allows objects created to be placed in front of the camera that is activated by AR.js in browser. After dissecting this basic example shown, I was able to substitute the 3D shapes with imagery of my choice.</p>
+	</div>
 </div>
 
 <div class="bgimg-2">
   <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">RESEARCH</span>
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">PROCESS</span>
   </div>
 </div>
-
-
-
 
 <div class="container">
 	<img class="container__image" src="whaleprototype.jpg">
 	<div class="container__text">
-		<h2>Getting into AR.js and A-Frame</h2>
-		<p>Using some of the groundwork set up from previous courses, I set out to make a working prototype of the basic augmented reality object, the photo of the whale, and worked through hours of tutuorials and feeds to get it to successfully load in the camera view. </p>
+		<h2>Bending the code to my will</h2>
+		<p>Using some of the groundwork set up from previous courses, I set out to make a working prototype of the basic augmented reality object, the photo of the whale, and worked through hours of tutorials and feeds to get it to successfully load in the camera view.</p>
+	</div>
+</div>
+
+<div class="container">
+	<img class="container__image" src="comment.png">
+	<div class="container__text">
+		<h2>Getting some help</h2>
+    <p>At first it was difficult to get the images I wanted to load, as all the tutorials were made using 3D objects. But after a lot of digging, and reaching out to the actual inventor of AR.js, a solution was found.</p>
 	</div>
 </div>
 
 <div class="bgimg-2">
   <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">PROCESS</span>
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">THE TALLEST OF TALES</span>
   </div>
 </div>
 
 <div class="container">
-	<img class="container__image" src="whalehome.jpg">
+	<img class="container__image" src="stories.jpg">
 	<div class="container__text">
 		<h2>The Stories</h2>
-		<p>Once I had the basic functionality down and assets created, I began to write, edit, and rewrite the stories. Then I made a scratch version of the audio to fill as placeholder for the site so once the user was at the historic site, the story could be listened to within the AR experience.  </p>
+		<p>Once I had the basic functionality down and assets created, I began to write, edit, and rewrite the stories. Then I recorded audio for each experience and mixed in music and sound as appropriate, so once the user was at the historic site, the story could be listened to within the AR experience. Granted, they do have to suffer through my silly narration but hopefully the sound of their laughter fills in over the plot holes. </p>
+	</div>
+</div>
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">TESTING</span>
+  </div>
+</div>
+
+
+<div class="container">
+	<img class="container__image" src="test.jpg">
+	<div class="container__text">
+		<h2>User Testing</h2>
+		<p>Lorem ipsum dolar...  </p>
 	</div>
 </div>
 
 
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">HOW IT WORKS</span>
+  </div>
+</div>
+
+<div class="container">
+	<img class="container__image" src="HowToGif1.gif">
+	<div class="container__text">
+		<h2> </h2>
+		<p></p>
+	</div>
+</div>
 
 <div class="bgimg-2">
   <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">DELIVERABLES</span>
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">DELIVERABLES</span>
   </div>
 </div>
 
 <h2 class="w3-center"></h2>
 
 <div class="w3-content w3-display-container">
-  <img class="mySlides" src="homepage.jpg" style="width:100%">
+  <img class="mySlides" src="macbookpromockup.png" style="width:100%">
+  <img class="mySlides" src="mapmockup.png" style="width:100%">
   <img class="mySlides" src="whalehome.jpg" style="width:100%">
+  <img class="mySlides" src="trainslide.png" style="width:100%">
+  <img class="mySlides" src="witchslide.png" style="width:100%">
+  <img class="mySlides" src="ketchupslide.png" style="width:100%">
   <img class="mySlides" src="historybillboard1.jpg" style="width:100%">
+  <img class="mySlides" src="busstop.png" style="width:100%">
+  <img class="mySlides" src="newspaperboy.jpg" style="width:100%">
 
 
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
@@ -184,39 +262,64 @@ function showDivs(n) {
 </script>
 
 <div class="container">
-		<p>A website containing the AR experience, as well as landing page and map. Audio files of the stories and advertising to promote the site.</p>
+		<p>A website containing the augmented reality experience, as well as landing page and map. Audio files of the stories and advertising/headlines to promote the site. Branding, logos, and icons as well as art direction and graphics to support the stories. Outdoor advertising would consist of billboards, bus stop signage, and old-timey newspaper boy re-enactments. </p>
 	</div>
 </div>
 
 <div class="bgimg-2">
   <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">SUMMARY</span>
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">SUMMARY</span>
   </div>
 </div>
 
+
 <div class="container">
-		<p>A website containing the AR experience, as well as landing page and map. Audio files of the stories and advertising to promote the site.</p>
+  <img class="container__image" src="mockup.gif">
+	<div class="container__text">
+		<h2>All together now</h2>
+		<p>Using everything I've learned in the program, combined with professional experience, and lots of digging around to find information and help wherever I could, I was able to bring the idea to life. This will provide a good foundation for potentially selling the idea as a more commercially-viable product to local tourist groups or city officials looking for ways to engage the community and get people out into our public spaces, all without needing anything physical to engage with.  </p>
 	</div>
 </div>
 
 <div class="bgimg-2">
   <div class="caption">
-  <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">ENDNOTES</span>
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">FINAL THOUGHTS</span>
   </div>
 </div>
 
 <div class="container">
-		<p>Links</p>
-    <p>sources</p>
-    <p>Capstone Site</p>
-    <p>Process Blog</p>
+  <img class="container__image" src="endwhale.jpg">
+	<div class="container__text">
+		<h2>Where to next?</h2>
+		<p>With the basic concept in place, the numbers of locations would be scaleable and could be implemented in any city or geographic region. A version 2.0 could include a gamification element, where you unlock locations and earn rewards from local business, and unlock the ability to add a tall tale yourself. You could even use real history (I know, crazy right?) and highlight forgotten but important milestones in the city, giving people a better sense of place and pride in where they live.</p>
+	</div>
+</div>
+
+
+<div class="bgimg-2">
+  <div class="caption">
+  <span class="border" style="background-color:transparent;font-size:35px;color: #f7f7f7;">ENDNOTES</span>
+  </div>
+</div>
+
+<div class="container">
+		<h2>Links</h2>
+    <p>SOURCES</p>
+    <p><a href="https://ar-js-org.github.io/AR.js-Docs/" target="_blank">AR.js documentation</a></p>
+    <p><a href="https://aframe.io/docs/1.0.0/introduction/" target="_blank">A-Frame documentation</a></p>
+
+    <p>THE SITE</p>
+    <p><a href="https://agullixson963.studio.mcad.edu/capstone/Component/index.html" target="_blank">The Augmented History of Minneapolis</a></p>
+
+    <p>PROCESS BLOG</p>
+    <p><a href="https://spark.adobe.com/page/BRXpWpIWDq9fm/" target="_blank">Sketchbook of the Trials and Tribulations of my Capstone</a></p>
 	</div>
 </div>
 
 
 <div class="bgimg-1">
-  <div class="caption">
-  <span class="border">THANK YOU!</span>
+
+  <span class="border"></span>
   </div>
 </div>
 
