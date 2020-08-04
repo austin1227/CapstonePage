@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Austin Gullixson Capstone</title>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -76,16 +76,14 @@ h2 {
   line-height: 1.6;
 }
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-  }
-}
+
 
 .container {
 	padding: 40px;
+  width: 100%;
 
 }
+
 	.container__image {
 		display: inline-block;
 		vertical-align: top;
@@ -97,10 +95,14 @@ h2 {
 		display: inline-block;
     width: 30%;
     height: auto;
-
 	}
-}
 
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="container__"] {
+      width: 100%;
+    }
+}
 
 </style>
 </head>
